@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Netra | Prediction Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .result-card {
+            margin-top: 100px;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+        }
+
+        .healthy {
+            color: #00ff99;
+        }
+
+        .cataract {
+            color: #ff4d4d;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="result-card">
+
+        <h1>🧠 AI Analysis Result</h1>
+        <p class="mt-4">The uploaded image is classified as:</p>
+
+        <h2 class="{% if 'Normal' in result1 %}healthy{% else %}cataract{% endif %}">
+            {{ result1 }}
+        </h2>
+
+        <h3>{{ result2 }}</h3>
+
+        <br><br>
+
+        <a href="{{ url_for('main') }}">
+            <button class="btn btn-light">
+                🔄 Analyze Another Image
+            </button>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>

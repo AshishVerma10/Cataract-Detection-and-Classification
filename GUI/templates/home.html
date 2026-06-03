@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Netra | Cataract Detection System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap + Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-custom {
+            background: #00c6ff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+
+        .btn-custom:hover {
+            background: #0072ff;
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container hero-section">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h1 class="display-4 font-weight-bold">👁️ Netra</h1>
+            <h3>AI Powered Cataract Detection & Classification</h3>
+            <p class="mt-4">
+                Early detection of cataract using advanced Computer Vision and Machine Learning.
+                Upload your retinal image and let our intelligent system analyze it instantly.
+            </p>
+
+            <a href="{{ url_for('main') }}">
+                <button class="btn btn-custom mt-3">
+                    <i class="fas fa-play-circle"></i> Get Started
+                </button>
+            </a>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png"
+                 class="img-fluid" width="350">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

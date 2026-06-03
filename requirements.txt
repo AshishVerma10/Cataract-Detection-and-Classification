@@ -1,0 +1,8 @@
+flask
+opencv-contrib-python
+scikit-image==0.19.3
+scikit-learn
+numpy==1.23.5
+h5py
+tensorflow
+werkzeug
