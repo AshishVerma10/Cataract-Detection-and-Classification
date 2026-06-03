@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: cataract-detection
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd GUI && python app.py
