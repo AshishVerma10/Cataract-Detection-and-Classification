@@ -90,39 +90,62 @@ The system works in two phases:
 
 ## Phase 1: Cataract Detection
 
+```text
 Input Image
-↓
+      │
+      ▼
 Image Preprocessing
-↓
+      │
+      ▼
 Feature Extraction
-↓
-SIFT Features
-+
-GLCM Features
-↓
+      │
+      ▼
+
+ ┌─────────────┐
+ │    SIFT     │
+ └─────────────┘
+
+        +
+
+ ┌─────────────┐
+ │    GLCM     │
+ └─────────────┘
+
+      │
+      ▼
 Feature Concatenation
-↓
+      │
+      ▼
 Logistic Regression
-↓
+      │
+      ▼
 Cataract / No Cataract
+```
 
 ---
 
 ## Phase 2: Severity Classification
 
-If Cataract Detected
-↓
-Eye Region Extraction
-↓
-Image Processing
-↓
-SqueezeNet CNN
-↓
-Classification
+```text
+Cataract Detected
+        │
+        ▼
+ Eye Region Extraction
+        │
+        ▼
+ Image Processing
+        │
+        ▼
+  SqueezeNet CNN
+        │
+        ▼
 
-- Mild Cataract
-- Normal Cataract
-- Severe Cataract
+ ┌─────────────────┐
+ │ Mild Cataract   │
+ │ Normal Cataract │
+ │ Severe Cataract │
+ └─────────────────┘
+```
 
 ---
 
@@ -440,11 +463,27 @@ Potential future enhancements:
 
 # 👨‍💻 Author
 
-## Ashish Kumar Verma
+### 👨‍💻 Ashish Kumar Verma
 
-B.Tech - Computer Science & Engineering
+B.Tech – Computer Science & Engineering
 
 Madan Mohan Malaviya University of Technology, Gorakhpur
+
+### 💼 LinkedIn
+
+https://www.linkedin.com/in/ashishverma2210
+
+### 🐙 GitHub
+
+https://github.com/AshishVerma10
+
+### 🌐 Live Application
+
+https://cataract-detection-and-classification.onrender.com/
+
+### 📧 Email
+
+vashishverma10@gmail.com
 
 ### Skills
 
